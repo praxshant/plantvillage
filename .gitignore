@@ -56,8 +56,8 @@ dataset/
 
 # Keep inference results (CSV and PNG)
 !inference_results/
-inference_results/*.csv
-inference_results/*.png
+!inference_results/*.csv
+!inference_results/*.png
 
 # Model artifacts
 *.pkl
