@@ -80,12 +80,54 @@ The model achieved balanced performance across all three classes with the confus
 - Minimal confusion between Early blight and Late blight
 - Excellent healthy plant detection
 
+#### Detailed Classification Report
+
+| Class | Precision | Recall | F1-Score | Support |
+|-------|-----------|--------|----------|---------|
+| Potato___Early_blight | 99.79% | 96.30% | 98.02% | 1,000 |
+| Potato___Late_blight | 96.49% | 96.10% | 96.29% | 1,000 |
+| Potato___healthy | 79.58% | 100.00% | 88.63% | 152 |
+| **Overall Accuracy** | - | - | - | **96.47%** |
+| **Macro Avg** | 91.95% | 97.47% | 94.31% | 2,152 |
+| **Weighted Avg** | 96.83% | 96.47% | 96.55% | 2,152 |
+
+#### Confusion Matrix
+
+| Actual \ Predicted | Early Blight | Late Blight | Healthy |
+|-------------------|--------------|-------------|---------|
+| Early Blight | 963 | 35 | 2 |
+| Late Blight | 2 | 961 | 37 |
+| Healthy | 0 | 0 | 152 |
+
+#### Additional Metrics
+
+- **Total Correct Predictions**: 2,076 / 2,152 (96.47%)
+- **Total Misclassifications**: 76 (3.53%)
+- **Early Blight Accuracy**: 96.30% (963/1000)
+- **Late Blight Accuracy**: 96.10% (961/1000)
+- **Healthy Accuracy**: 100.00% (152/152)
+- **Average Confidence Scores**:
+  - Early Blight: 89.20%
+  - Late Blight: 91.90%
+  - Healthy: 94.14%
+
 ## Model Artifacts
 
+### Training Artifacts
 - **Best Model**: `outputs_potato_improved/best_model.h5` (9.15 MB)
 - **Training Log**: `outputs_potato_improved/training_log.csv`
 - **Confusion Matrix**: `outputs_potato_improved/confusion_matrix_improved.png`
 - **Training History**: `outputs_potato_improved/training_history_improved.png`
+
+### Inference Results
+- **Classification Report**: `inference_results/classification_report.csv`
+- **Per-Class Metrics**: `inference_results/per_class_metrics.csv`
+- **Confusion Matrix (Detailed)**: `inference_results/confusion_matrix.csv`
+- **Confusion Matrix (Plot)**: `inference_results/confusion_matrix_detailed.png`
+- **ROC Curves**: `inference_results/roc_curves.png`
+- **Confidence Distribution**: `inference_results/confidence_distribution.png`
+- **All Predictions**: `inference_results/all_predictions.csv`
+- **Misclassifications**: `inference_results/misclassifications.csv`
 
 ## Hardware Requirements
 

@@ -51,9 +51,13 @@ Thumbs.db
 # Data and outputs
 outputs*/
 Outputs/
-inference_results/
 temp_*/
 dataset/
+
+# Keep inference results (CSV and PNG)
+!inference_results/
+inference_results/*.csv
+inference_results/*.png
 
 # Model artifacts
 *.pkl
