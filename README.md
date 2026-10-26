@@ -74,6 +74,12 @@ The improved CNN architecture includes:
 - Early stopping triggered after 20 epochs without improvement
 - Total training time: 84 epochs
 
+#### Training History
+![Training History](outputs_potato_improved/training_history_improved.png)
+
+#### Training Confusion Matrix
+![Training Confusion Matrix](outputs_potato_improved/confusion_matrix_improved.png)
+
 ### Class Performance
 The model achieved balanced performance across all three classes with the confusion matrix showing:
 - High precision and recall for all disease classes
@@ -99,6 +105,8 @@ The model achieved balanced performance across all three classes with the confus
 | Late Blight | 2 | 961 | 37 |
 | Healthy | 0 | 0 | 152 |
 
+![Confusion Matrix](inference_results/confusion_matrix_detailed.png)
+
 #### Additional Metrics
 
 - **Total Correct Predictions**: 2,076 / 2,152 (96.47%)
@@ -110,6 +118,12 @@ The model achieved balanced performance across all three classes with the confus
   - Early Blight: 89.20%
   - Late Blight: 91.90%
   - Healthy: 94.14%
+
+#### ROC Curves
+![ROC Curves](inference_results/roc_curves.png)
+
+#### Confidence Distribution
+![Confidence Distribution](inference_results/confidence_distribution.png)
 
 ## Model Artifacts
 
