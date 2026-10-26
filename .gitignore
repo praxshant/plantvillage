@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# TensorFlow/Keras
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.keras
+
+# Data and outputs
+outputs*/
+Outputs/
+inference_results/
+temp_*/
+dataset/
+
+# Model artifacts
+*.pkl
+*.joblib
+*.pickle
+
+# Logs
+*.log
+training_log.csv
+
+# Large datasets
+*.jpg
+*.jpeg
+*.png
+*.JPG
+*.JPEG
+*.PNG
+!*.png
+
+# Keep outputs_potato_improved plots
+!outputs_potato_improved/*.png
